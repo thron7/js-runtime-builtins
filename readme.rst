@@ -33,9 +33,8 @@ As it is intended as a Node module, this is how you would use it:
 ::
 
    var builtins = require('js-builtins');
+   var node_builtins = new builtins.node();
 
-   if ('process' in (new builtins.node()
-        && 'Math' in (new builtins.node()
-      )
+   if ('process' in node_builtins && 'Math' in node_builtins)
       console.log('node contains both generic and special symbols');
 
