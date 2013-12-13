@@ -23,7 +23,7 @@ latter being inherited by **safari** and so forth.
 
 The downside is that you have to instantiate the class you want to lookup in
 (with **new**), which is a tang more difficult than map lookups. The upside is
-you get inheritance.
+you get inheritance, which is better both for use and maintenance.
 
 Use
 ---
