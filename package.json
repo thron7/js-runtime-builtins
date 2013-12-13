@@ -1,0 +1,24 @@
+{
+  "name": "js-runtime-builtins",
+  "version": "0.0.0",
+  "description": "JavaScript built-in symbols for various runtimes",
+  "main": "js-builtins.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thron7/js-runtime-builtins.git"
+  },
+  "keywords": [
+    "javascript",
+    "globals",
+    "builtins",
+    "runtimes"
+  ],
+  "author": "thron7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thron7/js-runtime-builtins/issues"
+  }
+}
