@@ -349,6 +349,14 @@ update(browser.prototype, {
 	XPathResult          : false
 });
 
+// ie: general DOM built-ins
+function ie(){};
+exports.ie = ie;
+ie.prototype = new browser();
+update(ie.prototype, {
+	ActiveXObject            : true
+});
+
 // node: Node.js specific built-ins
 function node(){};
 exports.node = node;
@@ -398,4 +406,17 @@ update(rhino.prototype, {
 	toint32      : false,
 	version      : false
 };
+
+// Phantom
+function phantom(){};
+exports.phantom = phantom;
+phantom.prototype = new ecma();
+update(phantom.prototype, {
+	phantom      : true,
+	require      : true,
+	WebPage      : true,
+	console      : true, // in examples, but undocumented
+	exports      : true  // v1.7+
+});
+
 
