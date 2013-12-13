@@ -349,12 +349,26 @@ update(browser.prototype, {
 	XPathResult          : false
 });
 
-// ie: general DOM built-ins
+// ie
 function ie(){};
 exports.ie = ie;
 ie.prototype = new browser();
 update(ie.prototype, {
-	ActiveXObject            : true
+	ActiveXObject            : false,
+  offscreenBuffering       : false,
+  clipboardData            : false,
+  clientInformation        : false,
+  external                 : false,
+  screenTop                : false,
+  screenLeft               : false,
+});
+
+// firefox
+function firefox(){};
+exports.firefox = firefox;
+firefox.prototype = new browser();
+update(firefox.prototype, {
+	console      : false
 });
 
 // node: Node.js specific built-ins
@@ -405,7 +419,7 @@ update(rhino.prototype, {
 	sync         : false,
 	toint32      : false,
 	version      : false
-};
+});
 
 // Phantom
 function phantom(){};
