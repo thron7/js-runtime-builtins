@@ -368,7 +368,15 @@ function firefox(){};
 exports.firefox = firefox;
 firefox.prototype = new browser();
 update(firefox.prototype, {
-	console      : false
+	console      : false,
+});
+
+// webkit
+function webkit(){};
+exports.webkit = webkit;
+webkit.prototype = new browser();
+update(webkit.prototype, {
+  WebkitCSSMatrix    : false,
 });
 
 // node: Node.js specific built-ins
