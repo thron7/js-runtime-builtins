@@ -371,3 +371,31 @@ update(node.prototype, {
 	setImmediate  : false, // v0.9.1+
 	clearImmediate: false  // v0.9.1+
 });
+
+// Rhino
+function rhino(){};
+exports.rhino = rhino;
+rhino.prototype = new ecma();
+update(rhino.prototype, {
+	defineClass  : false,
+	deserialize  : false,
+	environment  : false,
+	gc           : false,
+	help         : false,
+	importPackage: false,
+	"java"       : false,
+	load         : false,
+	loadClass    : false,
+	print        : false,
+	quit         : false,
+	readFile     : false,
+	readUrl      : false,
+	runCommand   : false,
+	seal         : false,
+	serialize    : false,
+	spawn        : false,
+	sync         : false,
+	toint32      : false,
+	version      : false
+};
+
