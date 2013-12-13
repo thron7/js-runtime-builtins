@@ -1,6 +1,7 @@
 /**
  * The initial lists of symbols were shamelessly copied from JsHint
- * (jshint/src/vars.js)
+ * (https://github.com/jshint/jshint/blob/2.x/src/vars.js), which is MIT
+ * licensed.
  */
 // merge a source map into a target map (source entries take precedence)
 function update(target, source) {
